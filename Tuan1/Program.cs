@@ -4,4 +4,5 @@
 //Bai3.Run();
 //Bai4.Run();
 //Bai5.Run();
-TimMax.Run();
+//TimMax.Run();
+Isprime.Run();
