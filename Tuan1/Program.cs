@@ -8,4 +8,5 @@
 //Isprime.Run();//bai7
 //Bai8.Run();
 //Bai9.Run();
-Bai10.Run();
+//Bai10.Run();
+Bai11.Run();
