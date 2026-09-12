@@ -4,5 +4,6 @@
 //Bai3.Run();
 //Bai4.Run();
 //Bai5.Run();
-//TimMax.Run();
-Isprime.Run();
+//TimMax.Run();//bai6
+//Isprime.Run();//bai7
+Bai8.Run();
