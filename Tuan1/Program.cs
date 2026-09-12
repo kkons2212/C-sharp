@@ -11,4 +11,5 @@
 //Bai10.Run();
 //Bai11.Run();
 //Bai12.Run();
-SinhVien.Run();
+//SinhVien.Run();//bai13
+Nhanvien.Run();
