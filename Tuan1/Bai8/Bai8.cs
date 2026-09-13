@@ -5,7 +5,7 @@ namespace Tuan1
 {
     public class Bai8
     {
-        public static void hoanvi (ref double a ,ref double b )
+        public static void hoanvi (ref double a ,ref double b )// Hàm hoán vị hai số thực, dùng từ khóa 'ref' để truyền tham chiếu
         {
             double temp = a ;
             a = b;
@@ -18,9 +18,9 @@ namespace Tuan1
             x1 = Double.Parse(Console.ReadLine());
             Console.WriteLine("nhap gia tri x2: ");
             x2 = Double.Parse(Console.ReadLine());
-            hoanvi(ref x1,ref x2);
+            hoanvi(ref x1,ref x2);// Gọi hàm hoán vị và truyền tham chiếu biến x1, x2 bằng từ khóa 'ref'
             Console.WriteLine("gia tri x1 sau khi hoan vi la:"+x1);
-            Console.WriteLine("gia tri x1 sau khi hoan vi la:"+x2);
+            Console.WriteLine("gia tri x2 sau khi hoan vi la:"+x2);
             
         }
     }

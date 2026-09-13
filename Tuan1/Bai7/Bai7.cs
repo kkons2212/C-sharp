@@ -4,7 +4,7 @@ namespace Tuan1
 {
     public class Isprime
     {
-        public static Boolean ktrasonguyento (int n)
+        public static Boolean ktrasonguyento (int n)// Hàm kiểm tra số nguyên tố, trả về true nếu là số nguyên tố, ngược lại false
         {
             if(n<2)
             {
@@ -12,14 +12,14 @@ namespace Tuan1
             }
             else
             {
-                for(int i=2;i<=Math.Sqrt(n);i++)
+                for(int i=2;i<=Math.Sqrt(n);i++)// Kiểm tra các ước số từ 2 đến căn bậc 2 của n
                 {
-                    if(n%i==0)
+                    if(n%i==0)// Nếu chia hết cho i thì n không phải là số nguyên tố
                     {
                         return false;
                     }
                 }
-                return true;
+                return true;// Không chia hết cho số nào trong khoảng trên thì là số nguyên tố
             }
             
         }
@@ -29,7 +29,7 @@ namespace Tuan1
             int N = Convert.ToInt32(Console.ReadLine());
             if(Isprime.ktrasonguyento(N))
             {
-                Console.WriteLine("N la so nguyen to:");
+                Console.WriteLine("N la so nguyen to");
             }
             else
             {

@@ -10,9 +10,9 @@ namespace Tuan1
         public static void Run()
         {       int chon;
                 double x=0,y=0;
-                bool danhap=false;
+                bool danhap=false; // Cờ đánh dấu để kiểm tra xem đã nhập dữ liệu x, y hay chưa
                 while(true)
-            {
+            {   
                 Console.WriteLine("MENU");
                 Console.WriteLine("1. Nhap hai gia tri so thuc cho x, y");   
                 Console.WriteLine("2. Tinh x^y");
@@ -27,10 +27,10 @@ namespace Tuan1
                     x = Convert.ToDouble(Console.ReadLine());
                     Console.WriteLine("Nhap y:");
                     y = Convert.ToDouble(Console.ReadLine());
-                    danhap = true;
+                    danhap = true;// Đánh dấu đã hoàn thành việc nhập dữ liệu
                     break;
                     case 2:
-                    if(danhap!=true)
+                    if(danhap!=true)// kiểm tra trạng thái nhập trước khi tính lũy thừa
                         {
                             Console.Write("chua nhap gia tri x va y");
                             break;
@@ -38,11 +38,11 @@ namespace Tuan1
                         else
                         {
                             Console.Write($"{x} mu {y} la:"+Math.Pow(x,y));
-                            
+                            Console.WriteLine();
                         }
                     break;
                     case 3:
-                        if(danhap!=true)
+                        if(danhap!=true)// kiểm tra trạng thái nhập và điều kiện số không âm khi tính căn bậc 2
                         {
                             Console.Write("chua nhap gia tri x va y");
                             break;
@@ -51,14 +51,17 @@ namespace Tuan1
                         {
                             Console.WriteLine($"can bac 2 cua {x} la:"+Math.Sqrt(x));
                             Console.Write($"can bac 2 cua {y} la:"+Math.Sqrt(y));
+                            Console.WriteLine();
                         }
                         else
                         {
                             Console.WriteLine(" x hoac y k lon hon 0 khong the tinh can bac 2 cho 2 so");
                         }
                     break;
+
                     case 4:
                     return;
+
                     default:
                     Console.WriteLine("vui long nhap so hop le");
                     break;

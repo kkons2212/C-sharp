@@ -6,7 +6,7 @@
 //Bai5.Run();
 //TimMax.Run();//bai6
 //Isprime.Run();//bai7
-//Bai8.Run();
+Bai8.Run();
 //Bai9.Run();
 //Bai10.Run();
 //Bai11.Run();
@@ -15,4 +15,4 @@
 //Nhanvien.Run();
 //Bai15.Run();
 //Bai16.Run();
-Bai17.Run();
+//Bai17.Run();
