@@ -7,7 +7,7 @@ namespace Tuan1
     {
        public static int TimsoLonnhat (int a, int b , int c)
         {
-            return Math.Max(a,Math.Max(b,c));
+            return Math.Max(a,Math.Max(b,c));// Tìm số lớn nhất bằng cách lồng hai hàm Math.Max
         }
         public static void Run()
         {

@@ -15,7 +15,7 @@ namespace Tuan1
                 Console.WriteLine("ten nguoi thu:"+(i+1));
                 mang[i]= Console.ReadLine();
             }
-            Array.Sort(mang);
+            Array.Sort(mang);// Sử dụng phương thức tĩnh Array.Sort để sắp xếp mảng chuỗi theo thứ tự tăng dần
             Console.WriteLine("mang sau khi sap xep theo thu tu tang dan la:");
              for(int i=0;i<n;i++)
             {  

@@ -6,10 +6,13 @@ namespace Tuan1
 {
     public class Nhanvien
     {
+        // Thuộc tính thông tin nhân viên
         public  string hoten {get;set;}
         public decimal mucluong {get;set;}
         public int songayvang {get;set;}
-               public Nhanvien(string hoten,decimal mucluong,int songayvang)
+
+        // Hàm khởi tạo (Constructor) có tham số gán dữ liệu ban đầu cho đối tượng
+            public Nhanvien(string hoten,decimal mucluong,int songayvang)
         {
             this.hoten = hoten;
             this.mucluong=mucluong;
@@ -28,6 +31,7 @@ namespace Tuan1
                 xuat();
             }
         }
+        // Phương thức tính toán phạt trừ lương theo số ngày vắng
         public void xuat()
         {   Console.WriteLine("Thong tin nhan vien:");
             Console.WriteLine("ho ten nhan vien:"+hoten);

@@ -16,8 +16,8 @@ namespace Tuan1
                 x=int.Parse(Console.ReadLine());
             }
             catch(FormatException )
-            {
-                Console.WriteLine("x khong thuoc kieu so nguyen");
+            {   
+                Console.WriteLine("x khong thuoc kieu so nguyen");// Thông báo và dừng chương trình nếu x không phải số nguyên
                 return;
             }
           
@@ -27,7 +27,7 @@ namespace Tuan1
             }
             catch(FormatException)
             {
-                Console.WriteLine("y khong thuoc kieu so nguyen");
+                Console.WriteLine("y khong thuoc kieu so nguyen");// Thông báo và dừng chương trình nếu y không phải số nguyên
                 return;
             }
             Console.Write($"ket qua {x} mu {y} la:"+Math.Pow(x,y));

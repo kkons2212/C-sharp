@@ -17,7 +17,6 @@ namespace Tuan1
             // StringSplitOptions.RemoveEmptyEntries giúp tự động bỏ qua các khoảng trắng thừa
             string[] Sotu = chuoi.Split(" ", StringSplitOptions.RemoveEmptyEntries);
 
-           
             Console.WriteLine("so tu trong chuoi la: " + Sotu.Length);
         }
     }
