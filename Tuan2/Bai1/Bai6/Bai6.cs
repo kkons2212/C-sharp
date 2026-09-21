@@ -78,16 +78,17 @@ namespace Bai6
 
         // In danh sách các Point ra màn hình
         public void Output()
-        {
-            for (int i = 0; i < points.Count; i++)
-            {
-                // Tự động gọi phương thức ToString() của Bai2.Point
-                Console.WriteLine($"Diem [{i}]: {points[i]}");
-            }
-        }
+{
+    for (int i = 0; i < Count; i++)
+    {
+        // Khi gọi this[i], C# sẽ tự động chạy vào get của Indexer
+        // (đã bao gồm kiểm tra chỉ số hợp lệ và ép kiểu sang Point)
+        Console.WriteLine($"Diem [{i}]: {this[i]}");
+    }
+}
         static void Main(string[] args)
         {
-            Console.WriteLine("=== THIẾT KẾ & KIỂM THỬ LỚP ARRAYPOINT (BÀI 6) ===");
+            Console.WriteLine("KIỂM THỬ LỚP ARRAYPOINT ");
 
             ArrayPoint list = new ArrayPoint();
 
@@ -95,14 +96,12 @@ namespace Bai6
             list.Input();
 
             // 2. Xuất danh sách các điểm vừa nhập
-            Console.WriteLine("\n---------------------------------");
             Console.WriteLine("Danh sách các điểm:");
             list.Output();
 
             // 3. Minh họa tính năng của Indexer
             if (list.Count > 0)
             {
-                Console.WriteLine("\n---------------------------------");
                 // Lấy phần tử qua Indexer (Getter)
                 Point p0 = list[0]; 
                 Console.WriteLine($"Lấy điểm đầu tiên thông qua Indexer list[0]: {p0}");
