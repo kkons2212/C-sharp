@@ -38,7 +38,7 @@ namespace BaiTap3_5
         // Xuất thông tin chung
         public virtual void Xuat()
         {
-            Console.Write($"{MaNV,-10} | {HoTen,-20} | ");
+            Console.Write($"{MaNV} | {HoTen} | ");
         }
     }
 
@@ -117,12 +117,12 @@ namespace BaiTap3_5
         public override void Xuat()
         {
             base.Xuat();
-            Console.WriteLine($"San Xuat   | SP: {SoSanPham,5} | Luong: {TinhLuong(),15:N0} VNĐ");
+            Console.WriteLine($"San Xuat   | SP: {SoSanPham} | Luong: {TinhLuong()} VNĐ");
         }
     }
 
    
-    // 4. CHƯƠNG TRÌNH QUẢN LÝ VÀ CHẠY THỬ (MAIN)
+   
    
     class Program
     {
@@ -173,12 +173,12 @@ namespace BaiTap3_5
 
                     case "3":
                         Console.WriteLine("\n--- DANH SÁCH BẢNG LƯƠNG NHÂN VIÊN ---");
-                        Console.WriteLine(new string('-', 65));
+                        Console.WriteLine(new string("-"));
                         foreach (var nv in dsNhanVien)
                         {
-                            nv.Xuat(); // Thể hiện tính Đa hình
+                            nv.Xuat();
                         }
-                        Console.WriteLine(new string('-', 65));
+                        Console.WriteLine(new string("-"));
                         break;
 
                     case "4":
