@@ -23,12 +23,12 @@ namespace Winfrm
             this.FormClosing += Form1_FormClosing;
         }
 
-        #region Mức 2: Chặn nhập ký tự khác số vào textBox1, textBox2
+        
         private void TextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             TextBox textBox = sender as TextBox;
 
-            // Cho phép phím điều khiển (Backspace, Delete,...)
+            // Cho phép phím điều khiển 
             if (char.IsControl(e.KeyChar)) return;
 
             // Cho phép chữ số (0-9)
@@ -43,7 +43,7 @@ namespace Winfrm
             // Hủy ký tự không hợp lệ
             e.Handled = true;
         }
-        #endregion
+       
 
         #region Mức 1: Kiểm tra hợp lệ dữ liệu & Thông báo lỗi
         private bool ValidateInputs(out double a, out double b)
@@ -82,7 +82,7 @@ namespace Winfrm
         }
         #endregion
 
-        #region Xử lý nút bấm các phép toán
+        
         // Phép cộng (+) - button1
         private void button1_Click(object sender, EventArgs e)
         {
@@ -125,9 +125,9 @@ namespace Winfrm
                 textBox3.Text = (a / b).ToString();
             }
         }
-        #endregion
+      
 
-        #region Hỏi xác nhận trước khi đóng Form
+        
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             DialogResult result = MessageBox.Show("Bạn có muốn thoát chương trình không?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -136,6 +136,6 @@ namespace Winfrm
                 e.Cancel = true; // Hủy thao tác đóng
             }
         }
-        #endregion
+        
     }
 }

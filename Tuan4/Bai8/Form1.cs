@@ -32,7 +32,7 @@ public partial class Form1 : Form
         if (rdoTang.Checked) mang.SapXepTang();
         else if (rdoGiam.Checked) mang.SapXepGiam();
 
-        // 3. Xử lý Tìm kiếm (ĐÃ SỬA: Đọc đúng ô TextBox txtTimGiaTri & txtTimViTri)
+        // 3. Xử lý Tìm kiếm 
         if (rdoTimGiaTri.Checked && int.TryParse(txtTimGiaTri.Text, out int valTim))
         {
             int vt = mang.TimViTriCuaGiaTri(valTim);
@@ -70,7 +70,7 @@ public partial class Form1 : Form
             mang.ThayTheTaiViTri(idxOld, valNew2);
         }
 
-        // Hiển thị mảng kết quả sau khi xử lý
+        
         txtKetQuaMang.Text = mang.InMang();
     }
 
@@ -101,7 +101,7 @@ public partial class Form1 : Form
         txtMin.Text = mang.Min().ToString();
     }
 
-    // Nút Reset (ĐÃ SỬA: Thay rdoTimViTri.Clear() bằng xóa 2 ô TextBox tìm kiếm)
+   
     private void btnReset_Click(object sender, EventArgs e)
     {
         mang.DanhSach.Clear();
@@ -154,7 +154,7 @@ public partial class Form1 : Form
     private void label11_Click(object sender, EventArgs e) { }
 }
 
-// Class đóng gói logic Mảng Số Nguyên
+// Class  Mảng Số Nguyên
 public class MangSoNguyen
 {
     private List<int> a = new List<int>();

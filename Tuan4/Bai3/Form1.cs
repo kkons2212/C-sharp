@@ -94,7 +94,7 @@ public partial class Form1 : Form
         // Nếu người dùng bấm NO
         if (result == DialogResult.No)
         {
-            e.Cancel = true; // Hủy thao tác đóng Form
+            e.Cancel = true; 
         }
     }
 }
