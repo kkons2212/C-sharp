@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace BaiTap3_6
+namespace Bai18
 {
    
     // 1. LỚP TRỪU TƯỢNG THÍ SINH (LỚP CHA)

@@ -97,7 +97,7 @@ namespace Bai5
                 return;
             }
 
-            Console.WriteLine("=== CHUONG TRINH TINH TOAN DON THUC P(x) = a*x^n ");
+            Console.WriteLine(" CHUONG TRINH TINH TOAN DON THUC P(x) = a*x^n ");
             
             // 1. Nhập đơn thức
             DonThuc p = new DonThuc();

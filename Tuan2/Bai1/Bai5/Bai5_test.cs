@@ -6,9 +6,9 @@ namespace Bai5
     {
         public static void Run()
         {
-            Console.WriteLine("==================================================");
+            
             Console.WriteLine("          KIEM THU TU DONG CLASS DON THUC         ");
-            Console.WriteLine("==================================================");
+           
 
             // 1. Test Constructor & ToString
             Console.WriteLine("\n[1] Test Constructor & ToString():");
@@ -50,9 +50,8 @@ namespace Bai5
                 Console.WriteLine($"[Thanh cong] {ex.Message}");
             }
 
-            Console.WriteLine("\n==================================================");
             Console.WriteLine("               HOAN THANH KIEM THU!               ");
-            Console.WriteLine("==================================================");
+            
         }
     }
 }

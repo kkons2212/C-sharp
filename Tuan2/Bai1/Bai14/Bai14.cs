@@ -80,7 +80,7 @@ namespace Bai14
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
 
-            // Khai báo mảng kiểu ISoSanh[] (Thừa kế & Đa hình)
+            // Khai báo mảng kiểu ISoSanh[] 
             ISoSanh[] dsSanPham = new SanPham[]
             {
                 new SanPham("SP01", "Laptop Dell", 15000000),

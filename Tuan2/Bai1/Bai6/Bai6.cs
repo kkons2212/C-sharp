@@ -82,7 +82,6 @@ namespace Bai6
     for (int i = 0; i < Count; i++)
     {
         // Khi gọi this[i], C# sẽ tự động chạy vào get của Indexer
-        // (đã bao gồm kiểm tra chỉ số hợp lệ và ép kiểu sang Point)
         Console.WriteLine($"Diem [{i}]: {this[i]}");
     }
 }

@@ -6,7 +6,6 @@ namespace Bai1
     {
         public static void RunTests()
         {
-            Console.WriteLine("=== CHẠY DÒNG TEST NỘI BỘ ===");
 
             // Test case 1: Sinh viên sinh năm 2000
             Sinhvien sv1 = new Sinhvien("Nguyen Van A", 2000);

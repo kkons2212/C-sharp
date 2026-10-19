@@ -89,21 +89,21 @@ namespace Bai15
             Console.WriteLine("=== DANH SÁCH BAN ĐẦU ===");
             InDanhSach(dsSanPham);
 
-            // CÁCH 1: Truyền phương thức tĩnh 
+            // Truyền phương thức tĩnh 
            
             ThuatToanSapXepDelegate.Sort(dsSanPham, SoSanhTheoGia);
             Console.WriteLine("\n=== 1. SAU KHI SẮP XẾP THEO GIÁ (DÙNG DELEGATE TÊN HÀM) ===");
             InDanhSach(dsSanPham);
 
           
-            // CÁCH 2: Dùng Biểu thức Lambda (Lambda Expression)
+            //  Dùng Biểu thức Lambda (Lambda Expression)
            
             ThuatToanSapXepDelegate.Sort(dsSanPham, (x, y) => string.Compare(x.TenSP, y.TenSP));
             Console.WriteLine("\n=== 2. SAU KHI SẮP XẾP THEO TÊN A-Z (DÙNG LAMBDA EXPRESSION) ===");
             InDanhSach(dsSanPham);
 
             
-            // CÁCH 3: Sắp xếp theo Giá giảm dần
+            // Sắp xếp theo Giá giảm dần
             ThuatToanSapXepDelegate.Sort(dsSanPham, (x, y) => y.GiaBan.CompareTo(x.GiaBan));
             Console.WriteLine("\n=== 3. SAU KHI SẮP XẾP THEO GIÁ GIẢM DẦN (LAMBDA) ===");
             InDanhSach(dsSanPham);

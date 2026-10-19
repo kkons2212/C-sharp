@@ -8,9 +8,9 @@ namespace Bai10
         private int n;       // Bậc của đa thức
         private double[] a;  // Mảng chứa n + 1 hệ số (a[0], a[1], ..., a[n])
 
-        // ==========================================
+       
         // a. CÁC LOẠI CONSTRUCTOR
-        // ==========================================
+       
 
         // 1. Constructor mặc định (đa thức bậc 0)
         public DaThuc()
@@ -51,9 +51,9 @@ namespace Bai10
             }
         }
 
-        // ==========================================
+       
         // b. INDEXER TRUY CẬP ĐƠN THỨC THỨ i (a[i])
-        // ==========================================
+       
         public double this[int i]
         {
             get
@@ -74,10 +74,9 @@ namespace Bai10
             }
         }
 
-        // ==========================================
+       
         // c. PHƯƠNG THỨC NHẬP / XUẤT
-        // ==========================================
-
+       
         // Nhập bậc n và danh sách các hệ số
         public void Nhap()
         {
@@ -153,9 +152,9 @@ namespace Bai10
             Console.WriteLine();
         }
 
-        // ==========================================
+       
         // d. TÍNH GIÁ TRỊ CỦA ĐA THỨC VỚI x
-        // ==========================================
+       
         public double TinhGiaTri(double x)
         {
             double result = 0;

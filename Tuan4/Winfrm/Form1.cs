@@ -13,7 +13,7 @@ namespace Winfrm
         {
             InitializeComponent();
 
-            
+            this.Text= "Cộng trừ nhân chia ";
             textBox1.KeyPress += TextBox_KeyPress;
             textBox2.KeyPress += TextBox_KeyPress;
 

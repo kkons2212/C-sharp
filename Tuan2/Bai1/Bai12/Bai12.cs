@@ -3,9 +3,9 @@ using Mylib;
 
 namespace Bai12
 {
-    // ==========================================
+    
     // LỚP NHÂN VIÊN
-    // ==========================================
+   
     public class NhanVien
     {
         public string HoTen { get; set; }
@@ -56,13 +56,12 @@ namespace Bai12
         // Xuất thông tin nhân viên
         public void Xuat()
         {
-            Console.WriteLine($"{HoTen,-25} | {MucLuong,15:N0} VNĐ | {SoNgayVang,10} ngay | {TinhLuongThucNhan(),15:N0} VNĐ");
+            Console.WriteLine($"{HoTen} | {MucLuong} VNĐ | {SoNgayVang} ngay | {TinhLuongThucNhan()} VNĐ");
         }
     }
 
-    // ==========================================
-    // LỚP PHÒNG BÀN
-    // ==========================================
+    
+    // LỚP PHÒNG BAn
     public class PhongBan
     {
         private NhanVien[] dsNhanVien;
@@ -126,15 +125,15 @@ namespace Bai12
                 return;
             }
 
-            Console.WriteLine("\n" + new string('-', 75));
-            Console.WriteLine($"{"HO TEN",-25} | {"MUC LUONG",15} | {"NGAY VANG",10} | {"LUONG THUC NHAN",15}");
-            Console.WriteLine(new string('-', 75));
+            Console.WriteLine("\n" + new string("-"));
+            Console.WriteLine($"{"HO TEN"} | {"MUC LUONG"} | {"NGAY VANG"} | {"LUONG THUC NHAN"}");
+            Console.WriteLine(new string("-"));
 
             for (int i = 0; i < n; i++)
             {
                 dsNhanVien[i].Xuat();
             }
-            Console.WriteLine(new string('-', 75));
+            Console.WriteLine(new string("-"));
         }
 
         // TÍNH TỔNG LƯƠNG CỦA PHÒNG BÀN

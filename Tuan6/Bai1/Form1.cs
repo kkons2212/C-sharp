@@ -1,20 +1,20 @@
 ﻿using System;
 using System.Data;
-using System.Data.SqlClient; // Bước 1: Khai báo thư viện SQL
+using System.Data.SqlClient; //Khai báo thư viện SQL
 using System.Windows.Forms;
 
 namespace Bai1
 {
     public partial class QuanLyMonHoc : Form
     {
-        // Bước 2: Khai báo đối tượng SqlConnection dùng chung cho cả Form
+        //Khai báo đối tượng SqlConnection dùng chung cho cả Form
         SqlConnection connsql;
 
         public QuanLyMonHoc()
         {
             InitializeComponent();
 
-            // Bước 3: Khởi tạo chuỗi kết nối (Giữ nguyên thông số đăng nhập của bạn)
+            // Khởi tạo chuỗi kết nối
             string strCon = @"Data Source=127.0.0.1,1433;Initial Catalog=QLSinhVien;User ID=sa;Password=SqlServer@2026;TrustServerCertificate=True;Encrypt=False;";
             connsql = new SqlConnection(strCon);
         }
@@ -39,29 +39,29 @@ namespace Bai1
 
             try
             {
-                // 1. Mở kết nối
+                // Mở kết nối
                 if (connsql.State == ConnectionState.Closed)
                 {
                     connsql.Open();
                 }
 
-                // 2. Viết câu lệnh SQL Thêm (nối chuỗi giống hệt đề cương)
+                // Viết câu lệnh SQL Thêm 
                 string insertString = "INSERT INTO MonHoc VALUES ('" + txtMaMH.Text + "', N'" + txtTenMH.Text + "')";
 
-                // 3. Khai báo SqlCommand
+                // Khai báo SqlCommand
                 SqlCommand cmd = new SqlCommand(insertString, connsql);
 
-                // 4. Thực thi câu lệnh
+                // Thực thi câu lệnh
                 cmd.ExecuteNonQuery();
 
-                // 5. Đóng kết nối
+                // Đóng kết nối
                 connsql.Close();
 
                 MessageBox.Show("Thêm môn học thành công!");
             }
             catch (Exception ex)
             {
-                // Nếu lỗi thì cũng nhớ đóng kết nối lại cho an toàn
+              
                 if (connsql.State == ConnectionState.Open) connsql.Close();
                 MessageBox.Show("Lỗi khi thêm (có thể trùng mã): " + ex.Message);
             }

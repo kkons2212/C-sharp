@@ -69,7 +69,7 @@ namespace Bai16
             // Chạy ứng dụng áp dụng Thừa kế
             PTBac2Console app = new PTBac2Console();
 
-            // Đăng ký thêm sự kiện bằng toán tử += (Chuẩn yêu cầu bài toán)
+            // Đăng ký thêm sự kiện bằng toán tử += 
             app.Choose += (option) =>
             {
                 // Có thể log lại hoặc xử lý thêm sự kiện ở đây nếu thích
